@@ -1,0 +1,294 @@
+:root {
+    --navy: #071A38;
+    --navy2: #0D2A55;
+    --gold: #D4AF37;
+    --gold2: #F0D477;
+    --cream: #F7F4EC;
+    --ink: #172033;
+    --white: #fff;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+}
+
+h1, h2, h3, h4, .brand-font {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: .03em;
+}
+
+.navbar-alvorecer {
+    background: var(--navy);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, .18);
+}
+
+.navbar-alvorecer .navbar-brand img {
+    height: 58px;
+    width: auto;
+}
+
+.navbar-alvorecer .nav-link {
+    color: var(--gold2) !important;
+    font-size: 1.03rem;
+}
+
+.navbar-alvorecer .nav-link:hover,
+.navbar-alvorecer .nav-link.active {
+    color: #fff !important;
+}
+
+.btn-gold {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.btn-gold:hover {
+    background: var(--gold2);
+    border-color: var(--gold2);
+    color: var(--navy);
+}
+
+.btn-outline-gold {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+}
+
+.btn-outline-gold:hover {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+.bg-navy {
+    background: var(--navy);
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--navy);
+    margin-bottom: .25rem;
+}
+
+.section-kicker {
+    color: var(--gold);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: .12em;
+    font-size: 1.05rem;
+}
+
+.hero-carousel .carousel-item {
+    height: 78vh;
+    min-height: 460px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-carousel .carousel-item.hero-img {
+    background-image: url('../img/cores.png');
+}
+
+.hero-carousel .carousel-item.service1 {
+    background-image: url('../img/Logo-minimalista.png');
+}
+
+.hero-carousel .carousel-item.service2 {
+    background-image: url('../img/pintura-comercial.png');
+}
+
+.hero-carousel .carousel-item.service3 {
+    background-image: url('../img/pintura-fachada.png');
+}
+
+.hero-carousel .carousel-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(7, 26, 56, .78) 0%,
+        rgba(7, 26, 56, .56) 42%,
+        rgba(7, 26, 56, .28) 100%
+    );
+}
+
+.hero-carousel .carousel-caption {
+    z-index: 2;
+    bottom: 13%;
+    left: 9%;
+    right: 15%;
+}
+
+.hero-carousel .carousel-caption h1 {
+    font-size: 4rem;
+    max-width: 780px;
+}
+
+.hero-carousel .carousel-caption p {
+    max-width: 760px;
+}
+
+.card-service {
+    border: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(7, 26, 56, .15);
+    transition: transform .2s ease;
+}
+
+.card-service:hover {
+    transform: translateY(-6px);
+}
+
+.card-service img {
+    height: 255px;
+    object-fit: cover;
+}
+
+.price-tag {
+    color: var(--navy);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+}
+
+.equipe-img {
+    width: 100%;
+    max-height: 560px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-left: 4px solid var(--gold);
+    padding: 1.5rem;
+    border-radius: 4px;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(7, 26, 56, .06);
+}
+
+.testimonial-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-avatar-fallback {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue';
+    font-size: 1.3rem;
+}
+
+.clientes {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.site-footer {
+    background: var(--navy);
+    color: #cbd4e2;
+}
+
+.site-footer a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #fff;
+}
+
+.footer-logo {
+    height: 68px;
+    width: auto;
+}
+
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #25D366;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .28);
+    z-index: 999;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.service-hero {
+    background: var(--navy);
+}
+
+.detail-thumb {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.info-box {
+    background: #fff;
+    border-top: 4px solid var(--gold);
+    box-shadow: 0 5px 16px rgba(7, 26, 56, .08);
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--navy);
+    color: var(--gold);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 767px) {
+    .navbar-alvorecer .navbar-brand img {
+        height: 48px;
+    }
+
+    .hero-carousel .carousel-item {
+        height: 64vh;
+    }
+
+    .hero-carousel .carousel-caption {
+        left: 8%;
+        right: 8%;
+        bottom: 11%;
+    }
+
+    .hero-carousel .carousel-caption h1 {
+        font-size: 2.35rem;
+    }
+
+    .section-title {
+        font-size: 2.15rem;
+    }
+}
